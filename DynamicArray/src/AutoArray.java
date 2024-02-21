@@ -6,7 +6,7 @@ public class AutoArray {
 
             System.out.println("Enter numbers (enter -1 to view all input numbers):");
 
-            int[] numbers = new int[1]; // Start with an array of size 1
+            int[] numbers = new int[1]; 
             int count = 0;
 
             while (true) {
@@ -17,7 +17,7 @@ public class AutoArray {
                 }
 
                 if (count == numbers.length) {
-                    // Resize the array if it's full
+                    
                     int[] newNumbers = new int[numbers.length * 2];
                     System.arraycopy(numbers, 0, newNumbers, 0, numbers.length);
                     numbers = newNumbers;
@@ -33,6 +33,4 @@ public class AutoArray {
 
             scanner.close();
         }
-
-
 }
